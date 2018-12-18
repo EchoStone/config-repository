@@ -7,12 +7,12 @@ spring:
     tomcat:
       initSQL: SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci
 
-   jpa:
+  jpa:
     database: MYSQL
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
     hibernate:
-      ddl-auto: none
-      show-sql: true
+      ddl-auto: update
 
